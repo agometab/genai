@@ -27,6 +27,8 @@ activities = [
     # Nuevas actividades deportivas
     {"id": 3, "name": "Voleibol", "type": "deporte", "participants": []},
     {"id": 4, "name": "Natación", "type": "deporte", "participants": []},
+    {"id": 101, "name": "Tenis", "type": "deporte", "participants": []},
+    {"id": 102, "name": "Atletismo", "type": "deporte", "participants": []},
 
     # Actividades artísticas existentes...
     {"id": 5, "name": "Pintura", "type": "artístico", "participants": []},
@@ -34,6 +36,8 @@ activities = [
     # Nuevas actividades artísticas
     {"id": 7, "name": "Danza", "type": "artístico", "participants": []},
     {"id": 8, "name": "Música", "type": "artístico", "participants": []},
+    {"id": 201, "name": "Fotografía", "type": "artístico", "participants": []},
+    {"id": 202, "name": "Escultura", "type": "artístico", "participants": []},
 
     # Actividades intelectuales existentes...
     {"id": 9, "name": "Ajedrez", "type": "intelectual", "participants": []},
@@ -41,6 +45,8 @@ activities = [
     # Nuevas actividades intelectuales
     {"id": 11, "name": "Olimpiada de Matemáticas", "type": "intelectual", "participants": []},
     {"id": 12, "name": "Club de Lectura", "type": "intelectual", "participants": []},
+    {"id": 301, "name": "Robótica", "type": "intelectual", "participants": []},
+    {"id": 302, "name": "Programación", "type": "intelectual", "participants": []},
 ]
 
 
