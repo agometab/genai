@@ -20,35 +20,62 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
 # In-memory activity database
-activities = [
-    # Actividades deportivas existentes...
-    {"id": 1, "name": "Fútbol", "type": "deporte", "participants": []},
-    {"id": 2, "name": "Básquetbol", "type": "deporte", "participants": []},
-    # Nuevas actividades deportivas
-    {"id": 3, "name": "Voleibol", "type": "deporte", "participants": []},
-    {"id": 4, "name": "Natación", "type": "deporte", "participants": []},
-    {"id": 101, "name": "Tenis", "type": "deporte", "participants": []},
-    {"id": 102, "name": "Atletismo", "type": "deporte", "participants": []},
-
-    # Actividades artísticas existentes...
-    {"id": 5, "name": "Pintura", "type": "artístico", "participants": []},
-    {"id": 6, "name": "Teatro", "type": "artístico", "participants": []},
-    # Nuevas actividades artísticas
-    {"id": 7, "name": "Danza", "type": "artístico", "participants": []},
-    {"id": 8, "name": "Música", "type": "artístico", "participants": []},
-    {"id": 201, "name": "Fotografía", "type": "artístico", "participants": []},
-    {"id": 202, "name": "Escultura", "type": "artístico", "participants": []},
-
-    # Actividades intelectuales existentes...
-    {"id": 9, "name": "Ajedrez", "type": "intelectual", "participants": []},
-    {"id": 10, "name": "Debate", "type": "intelectual", "participants": []},
-    # Nuevas actividades intelectuales
-    {"id": 11, "name": "Olimpiada de Matemáticas", "type": "intelectual", "participants": []},
-    {"id": 12, "name": "Club de Lectura", "type": "intelectual", "participants": []},
-    {"id": 301, "name": "Robótica", "type": "intelectual", "participants": []},
-    {"id": 302, "name": "Programación", "type": "intelectual", "participants": []},
-]
-
+activities = {
+   "Chess Club": {
+      "description": "Learn strategies and compete in chess tournaments",
+      "schedule": "Fridays, 3:30 PM - 5:00 PM",
+      "max_participants": 12,
+      "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
+   },
+   "Programming Class": {
+      "description": "Learn programming fundamentals and build software projects",
+      "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
+      "max_participants": 20,
+      "participants": ["emma@mergington.edu", "sophia@mergington.edu"]
+   },
+   "Gym Class": {
+      "description": "Physical education and sports activities",
+      "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
+      "max_participants": 30,
+      "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+   },
+   "Basketball Team": {
+      "description": "Competitive basketball training and games",
+      "schedule": "Tuesdays and Thursdays, 4:00 PM - 6:00 PM",
+      "max_participants": 15,
+      "participants": []
+   },
+   "Swimming Club": {
+      "description": "Swimming training and water sports",
+      "schedule": "Mondays and Wednesdays, 3:30 PM - 5:00 PM",
+      "max_participants": 20,
+      "participants": []
+   },
+   "Art Studio": {
+      "description": "Express creativity through painting and drawing",
+      "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+      "max_participants": 15,
+      "participants": []
+   },
+   "Drama Club": {
+      "description": "Theater arts and performance training",
+      "schedule": "Tuesdays, 4:00 PM - 6:00 PM",
+      "max_participants": 25,
+      "participants": []
+   },
+   "Debate Team": {
+      "description": "Learn public speaking and argumentation skills",
+      "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+      "max_participants": 16,
+      "participants": []
+   },
+   "Science Club": {
+      "description": "Hands-on experiments and scientific exploration",
+      "schedule": "Fridays, 3:30 PM - 5:00 PM",
+      "max_participants": 20,
+      "participants": []
+   }
+}
 
 @app.get("/")
 def root():
